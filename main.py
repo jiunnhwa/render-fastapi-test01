@@ -9,7 +9,7 @@ app = FastAPI()
 async def root():
     return {"message": "Hello World"}
 
-@app.get("/lifenum")
+@app.get("/lifenum/")
 def read_lifenum(dob: Optional[str] = None):
     return {
         "ABC": "336",
